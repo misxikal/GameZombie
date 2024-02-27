@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game-interface</title>
+    <link rel="stylesheet" href="../css/gamestyle.css">
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <header>
+        <div id="healf">
+            <div class="point-hp"><img src="../image/heart.png" alt=""></div>
+            <div class="point-hp"><img src="../image/heart.png" alt=""></div>
+            <div class="point-hp"><img src="../image/heart.png" alt=""></div>
+            <div class="point-hp"><img src="../image/heart.png" alt=""></div>
+            <div class="point-hp"><img src="../image/heart.png" alt=""></div>
+        </div>
+        <div>
+            <h1 id="NameUsr"></h1>
+        </div>
+        <div>
+            <h1 id="Score">Score:</h1>
+        </div>
+        <div class="settings">
+            <button class="open-popup" type="button"><img src="../image/1677656111_foni-club-p-shesterenka-piksel-art-2.png" alt=""></button>
+        </div>
+        <div class="popup__bg"> 
+            <form class="popup">
+                <input type="button" id="login" onclick="gameEnd()" value="Выйти">
+            </form>
+        </div>  
+    </header>
+    
+    <div class="game-container" id="game-container">
+    </div>
+</body>
+<script src="../js/scripts.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/generateBlocks.js"></script>
+<script src="../js/move.js"></script>
+<script src="../js/zombie.js"></script>
+</html>
